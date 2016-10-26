@@ -11,11 +11,13 @@ published: true
 ---
 
 
-## Wie funktioniert es?
+Wie funktioniert es?
+-------------------
 
 Anstatt eine E-Mail zu versenden soll hier ein POST request zu casamail.ch gemacht werden. Diese Anfrage wird dann in der casamail DB abgespeichert und CASAMAIL kann es von dort aus mehrfach distribuieren.
 
-## Welche Werte sind möglich
+Welche Werte sind möglich
+-------------------------
 
 Folgend finden Sie eine Übersicht-Liste aller Werte die eine `msg` (Nachricht) enthalten kann:
 
@@ -62,7 +64,8 @@ property_price                 |                123456               |   | Verka
 **provider**                   |               immo-ag               |   | Kunden-Slug des Objektes
 **publisher**                  |             immo-portal             |   | Veröffentlicher/Portal
 
-## Beispiel PHP POST mit CURL
+Beispiel PHP POST mit CURL
+--------------------------
 
 ```php
 <?php
@@ -99,7 +102,8 @@ property_price                 |                123456               |   | Verka
 ?>
 ```
 
-## Suchprofile
+Suchprofile
+-----------
 
 Suchprofil Angaben können an eine Anfrage per extra_data angehängt werden.
 
@@ -129,3 +133,20 @@ Suchprofil Angaben können an eine Anfrage per extra_data angehängt werden.
   }
 }
 ```
+
+Key        | Beispiel | Beschreibung
+-----------|----------|-------------
+salestype  | buy      | (string) rent or buy
+categories | flat     | (string) CasaXML Comma seperated Categories
+rooms_from | 3 | (float)
+rooms_to | 5.5 | (float)
+price_from | 0 | (int)
+price_to | 1500000 | (int)
+living_space_from | 125 | (int)
+living_space_to | 100 | (int) in m2
+property_area_from | 100 |  (int) in m2
+property_area_to | 200 |  (int) in m2
+postal_code | 6340 | (int)
+locality | Baar | (string)
+radius | 5000 | (int)
+note | Test |
