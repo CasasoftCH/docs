@@ -39,7 +39,7 @@ firstname                      |                 Max                 |   | Absen
 lastname                       |                Muster               |   | Absender Nachname
 legal_name                     |            Max Muster GmbH          |   | Absender Firmenname
 street                         |           Musterstrasse 21          |   | Absender Postversand Strasse
-postal_code                    |                1234                 |   | Absender Postversand PLZ/ZIP 
+postal_code                    |                1234                 |   | Absender Postversand PLZ/ZIP
 locality                       |               Ortingen              |   | Absender Postversand Ort/Stadt
 country                        |          [CH, DE, AT, ...]          |   | Absender Postversand ISO 2 Stellig Land
 phone                          |           +41 71 123 45 67          |   | Absender Telefon
@@ -59,9 +59,9 @@ property_category              |       [CasaXML category slug]       |   | Kateg
 property_country               |          [CH, DE, AT, ...]          |   | ISO 2 Land des Objetktes
 property_rooms                 |                 3.5                 |   | Anzahl Zimmer des Objektes
 property_price                 |                123456               |   | Verkauf/Miet-Preis des Objektes
-**provider**                   |               immo-ag               |   | Kunden-Slug des Objektes 
-**publisher**                  |             immo-portal             |   | Veröffentlicher/Portal 
-    
+**provider**                   |               immo-ag               |   | Kunden-Slug des Objektes
+**publisher**                  |             immo-portal             |   | Veröffentlicher/Portal
+
 ## Beispiel PHP POST mit CURL
 
 ```php
@@ -78,9 +78,9 @@ property_price                 |                123456               |   | Verka
 	$data['property_country'] = $this->getFieldValue('address_country');
 	$data['property_country'] = $this->getFieldValue('address_country');
 	/* ... */
-	
+
 	$data_string = json_encode($data);                                                                                   
-	                                                                                                                     
+
 	$ch = curl_init('http://onemail.ch/api/msg');
 	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
@@ -90,11 +90,43 @@ property_price                 |                123456               |   | Verka
 	    'Content-Length: ' . strlen($data_string))                                                                       
 	);
 	curl_setopt($ch, CURLOPT_USERPWD,  "simpleauthuser:simpleauthpassword");
-	                                                                                                                     
+
 	$result = curl_exec($ch);
 	$json = json_decode($result, true);
 	if (isset($json['validation_messages'])) {
 		echo '<p>'.print_r($json['validation_messages'], true).'</p>';
 	}
 ?>
+```
+
+## Suchprofile
+
+Suchprofil Angaben können an eine Anfrage per extra_data angehängt werden.
+
+```json
+{
+	"email" : "max.muster@domain.ch",
+	"publisher" : "foo",
+  "provider" : "bar",
+	"extra_data" : {
+		"acquiredThrough" : "Andere",
+		"searchProfile": {
+			"salestype":"buy",
+			"categories":"flat",
+			"rooms_from":"3",
+			"rooms_to":"5.5",
+			"price_from":"",
+			"price_to":"1500000",
+			"living_space_from":"125",
+			"living_space_to":"",
+			"property_area_from":"",
+			"property_area_to":"",
+			"postal_code":"6340",
+			"locality":"Baar",
+			"radius":5000,
+			"note":"Test"
+		}
+	}
+}
+
 ```
