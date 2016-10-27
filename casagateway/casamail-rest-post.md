@@ -148,5 +148,5 @@ property_area_from | 100 |  (int) in m2
 property_area_to | 200 |  (int) in m2
 postal_code | 6340 | (int)
 locality | Baar | (string)
-radius | 5000 | (int)
+radius | 5000 | (int) in meters
 note | Test |
