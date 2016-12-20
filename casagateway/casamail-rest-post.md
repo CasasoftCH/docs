@@ -36,6 +36,7 @@ extra_data                     |{"acquiredThrough":"Suchmaschienen"} |   | Freie
 lang                           |       [de, en, fr, it, ... ]        |   | 2 Stelliger ISO kürzel der Nachrichts-Srache
 origin                         |                  -                  | x | NICHT BENUTZT
 property_reference             |             123.456.789             |   | Objekt referenz-nummer diese wird von Makler-Softwares angegeben um das Objekt zu identifizieren
+project_reference             |             123.456.789             |   | Project referenz-nummer diese wird von Makler-Softwares angegeben um das Projekt zu identifizieren
 gender                         |              [0, 1, 2]              |   | Absender: 0 = unbekannt, 1 = Mänlich, 2 = Weiblich
 firstname                      |                 Max                 |   | Absender Vorname
 lastname                       |                Muster               |   | Absender Nachname
