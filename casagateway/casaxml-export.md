@@ -1,9 +1,9 @@
 ---
-title: CasaXML export per HTTP
-keywords: casaxml
-summary: "Diese Schnittstelle ermöglicht das transferieren von Objektdaten eines Veröffentlichungs-Portal auf CASAGATEWAY (normalerweise publisher genant) mittels dem CasaXml Standart. Dies wird vollständig über HTTP ermöglich und benötigt sommit keine FTP abhängigkeiten. Das XML kann beliebig von dem CASAGATEWAY API jederzeit abgeholt werden. CASAGATEWAY generiert und liefert per response dan direkt ein XML body. Ebenfalls wird CASAGATEWAY pokes/hooks ausführen sobald jegliche änderungen oder mutationen zu den Daten vorgenommen wurden. Diese werden per GET an einem vorkonfigurierten URI ausgelöst."
+title: SwissRETS export per HTTP
+keywords: SwissRETS
+summary: "Diese Schnittstelle ermöglicht das transferieren von Objektdaten eines Veröffentlichungs-Portal auf CASAGATEWAY (normalerweise publisher genant) mittels dem SwissRETS Standart. Dies wird vollständig über HTTP ermöglich und benötigt sommit keine FTP abhängigkeiten. Das XML kann beliebig von dem CASAGATEWAY API jederzeit abgeholt werden. CASAGATEWAY generiert und liefert per response dan direkt ein XML body. Ebenfalls wird CASAGATEWAY pokes/hooks ausführen sobald jegliche änderungen oder mutationen zu den Daten vorgenommen wurden. Diese werden per GET an einem vorkonfigurierten URI ausgelöst."
 sidebar: casagateway_sidebar
-permalink: /casaxml-export/
+permalink: /SwissRETS-export/
 folder: casagateway
 ---
 
@@ -16,7 +16,7 @@ Casasoft AG kann Ihnen diese keys gennerieren und liefern. Jeder Schlüssel dien
 
 Der request läuft mittels gewöhnlichem `http` und einem `HMAC handshake` der durch ein `API Key` und einem `Private Key` generiert wird ab. Dieser wird von `CASAGATEWAY` zur verfügung gestellt. Bitte beachten Sie das Sie den `Private Key` nie Öffentlich zugänglich machen.
 
-[CasaXML](https://github.com/CasasoftCH/CasaXML)
+[SwissRETS](https://github.com/CasasoftCH/SwissRETS)
 
 Dieses XML kann dan beliebig mit Ihrer Infrastruktur beglichen werden, oder Sie nutzen das XML gleich als Speicher-Medium. Das `parsen` und `persistieren` dieser XML liegt in den Händen des Konsumenten. Allerdings bieten wir einige PHP Klassen an die das interpretieren von Werten vereinfacht. [github.com/casamodules/CasasoftStandards](https://github.com/CasasoftCH/casamodules/tree/master/src/CasasoftStandards)
 
@@ -39,7 +39,7 @@ Dieses Beispiel zeigt eine einfache PHP Funktion die mittels CURL diese Abfrage 
 
 ```php
 <?php
-    function getCasaXml($apikey, $privateKey, $options){
+    function getSwissRETS($apikey, $privateKey, $options){
         //specify the current UnixTimeStamp
         $timestamp = time();
 
@@ -100,7 +100,7 @@ Dieses Beispiel zeigt eine einfache PHP Funktion die mittels CURL diese Abfrage 
         'format' => 'casa-xml'
         //further options might be added later
     );
-    $xml_string = getCasaXml('API_KEY_GOES_HERE', 'PRIVATE_KEY_GOES_HERE', $options);
+    $xml_string = getSwissRETS('API_KEY_GOES_HERE', 'PRIVATE_KEY_GOES_HERE', $options);
     
     //use the $xml_string as you see fit from here on
     
