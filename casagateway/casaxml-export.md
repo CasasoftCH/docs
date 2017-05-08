@@ -16,7 +16,7 @@ Casasoft AG kann Ihnen diese keys gennerieren und liefern. Jeder Schlüssel dien
 
 Der request läuft mittels gewöhnlichem `http` und einem `HMAC handshake` der durch ein `API Key` und einem `Private Key` generiert wird ab. Dieser wird von `CASAGATEWAY` zur verfügung gestellt. Bitte beachten Sie das Sie den `Private Key` nie Öffentlich zugänglich machen.
 
-[SwissRETS](https://github.com/CasasoftCH/SwissRETS)
+[SwissRETS](https://github.com/qualipool/swissrets)
 
 Dieses XML kann dan beliebig mit Ihrer Infrastruktur beglichen werden, oder Sie nutzen das XML gleich als Speicher-Medium. Das `parsen` und `persistieren` dieser XML liegt in den Händen des Konsumenten. Allerdings bieten wir einige PHP Klassen an die das interpretieren von Werten vereinfacht. [github.com/casamodules/CasasoftStandards](https://github.com/CasasoftCH/casamodules/tree/master/src/CasasoftStandards)
 
