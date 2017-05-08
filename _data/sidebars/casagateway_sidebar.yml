@@ -23,8 +23,8 @@ entries:
   - title: API Services
     output: web, pdf
     folderitems:
-    - title: CASAXML export
-      url: /casaxml-export/
+    - title: SwissRETS export
+      url: /swissrets-export/
       output: web, pdf
       
     - title: CASAMAIL RestFull POST
