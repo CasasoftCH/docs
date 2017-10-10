@@ -50,7 +50,7 @@ mobile                         |           +41 71 123 45 67          |   | Absen
 fax                            |           +41 71 123 45 67          |   | Absender Fax
 **email**                      |           email@domain.ch           |   | Absender E-Mail
 direct_recipient_email         |           makler@immo-ag.ch         |   | Direktes E-Mail soll an diese E-Mail addresse versendet werden. Normalerweise wird hier der Ansprechpartner des Objektes eingetragen.
-send_cc_to_sender              |                  -                  |   | NICHT BENUTZT
+send_cc_to_sender              |                  -                  |   | Sendet eine Kopie an die angegebene Adresse.
 recipients_notified_status     |                  -                  | x | Zustand ob Personen benachrichtigt wurden
 recipients_notified_at         |                  -                  | x | Zeit wann Personen benachrichtigt wurden
 recipients_notified_emails     |                  -                  | x | E-Mails addressen die benachrichtigt wurden
