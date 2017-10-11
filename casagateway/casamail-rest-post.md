@@ -62,6 +62,14 @@ property_category              |       [CasaXML category slug]       |   | Kateg
 property_country               |          [CH, DE, AT, ...]          |   | ISO 2 Land des Objetktes
 property_rooms                 |                 3.5                 |   | Anzahl Zimmer des Objektes
 property_price                 |                123456               |   | Verkauf/Miet-Preis des Objektes
+backlink .                  |                                |   | Kompletter URL des Uhrsprungs/Webseite
+vendor_name                 |                                |   | Verkäufer/Anbieter
+vendor_street               |                                |   | Verkäufer/Anbieter
+vendor_postal_code          |                                |   | Verkäufer/Anbieter
+vendor_locality             |                                |   | Verkäufer/Anbieter
+inquiry_person_lastname     |                                |   | Verkäufer/Anbieter
+inquiry_person_firstname    |                                |   | Verkäufer/Anbieter
+inquiry_person_email        |                                |   | Verkäufer/Anbieter
 **provider**                   |               immo-ag               |   | Kunden-Slug des Objektes
 **publisher**                  |             immo-portal             |   | Veröffentlicher/Portal
 
