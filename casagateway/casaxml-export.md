@@ -107,6 +107,10 @@ Dieses Beispiel zeigt eine einfache PHP Funktion die mittels CURL diese Abfrage 
 ?>
 ```
 
+## Welche optionen kann ich nutzten
+
+*company*: company_slug um nach firmen zu filtern. Dies ist sinvol für grössere Portal/Publishers wo die imports Unterteilen möchten.
+
 ## Wie weiss ich wenn sich etwas aktualisiert hat?
 
 `CASAGATEWAY` wird bei jeglichen Änderungen einen `GET poke/hook` auf eine vordefinierte URI ausführen. Diese kann z.B. wie folgt aussehen:
