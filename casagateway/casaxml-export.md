@@ -109,7 +109,11 @@ Dieses Beispiel zeigt eine einfache PHP Funktion die mittels CURL diese Abfrage 
 
 ## Welche optionen kann ich nutzten
 
-*company*: company_slug um nach firmen zu filtern. Dies ist sinvol für grössere Portal/Publishers wo die imports Unterteilen möchten.
+*company*: company_slug um nach Firmen zu filtern. Dies ist sinvol für grössere Portal/Publishers wo die imports Unterteilen möchten.
+
+## Welche Firmen wollen für mich (publisher) Objekte versenden und wie erhalte ich diesen company_slug
+
+Mite dem gleichen api schlssel und verfahren kann unter dem Link 'https://casagateway.ch/rest/publisher-companies' eine JSON liste aller Firmen beziehen die auf diese Platform Objekte zum veröffentlichen haben.
 
 ## Wie weiss ich wenn sich etwas aktualisiert hat?
 
