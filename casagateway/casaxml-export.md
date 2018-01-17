@@ -113,7 +113,7 @@ Dieses Beispiel zeigt eine einfache PHP Funktion die mittels CURL diese Abfrage 
 
 ## Welche Firmen wollen für mich (publisher) Objekte versenden und wie erhalte ich diesen company_slug
 
-Mite dem gleichen api schlssel und verfahren kann unter dem Link 'https://casagateway.ch/rest/publisher-companies' eine JSON liste aller Firmen beziehen die auf diese Platform Objekte zum veröffentlichen haben.
+Mit dem gleichen API Schlüssel und Verfahren kann unter dem Link 'https://casagateway.ch/rest/publisher-companies' eine JSON Liste aller Firmen bezogen werden die auf diese Platform Objekte zum veröffentlichen bereit haben.
 
 ## Wie weiss ich wenn sich etwas aktualisiert hat?
 
