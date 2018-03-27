@@ -10,6 +10,9 @@ folder: casagateway
 published: true
 ---
 
+<h1 style="color:red">These Documentations have migrated. <small>Diese Dokumentationen wurden verschoben.</small></h1>
+<a href="https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages" class="btn btn-primary">https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages</a>
+
 
 Wie funktioniert es?
 -------------------
