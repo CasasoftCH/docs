@@ -10,7 +10,9 @@ folder: casagateway
 published: true
 ---
 
-<h1 style="color:red">These Documentations have migrated. Diese Dokumentationen wurden verschoben.</h1>
+These Documentations have migrated. Diese Dokumentationen wurden verschoben.
+------------------------
+
 <a href="https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages/146636855/CASAMAIL+Restful+post" class="btn btn-primary">https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages/146636855/CASAMAIL+Restful+post</a>
 
 
