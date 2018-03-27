@@ -7,6 +7,11 @@ permalink: /swissrets-export/
 folder: casagateway
 ---
 
+These Documentations have migrated. Diese Dokumentationen wurden verschoben.
+------------------------
+
+<a href="https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages/146636828/SwissRETS+export+per+HTTP" class="btn btn-primary">https://casasoftag.atlassian.net/wiki/spaces/DOCS/pages/146636828/SwissRETS+export+per+HTTP</a>
+
 
 ## Wie erhalte ich die API und Private Keys?
 
